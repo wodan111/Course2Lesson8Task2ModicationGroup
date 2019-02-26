@@ -50,7 +50,7 @@ public class Group implements Military, Serializable {
 		}
 
 		if (s.getSecondName() == null) {
-			System.out.print("Студента не знайдено! ");
+			System.out.print("РЎС‚СѓРґРµРЅС‚Р° РЅРµ Р·РЅР°Р№РґРµРЅРѕ! ");
 			return null;
 		}
 		return s;
