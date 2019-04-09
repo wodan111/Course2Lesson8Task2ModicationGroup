@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Group implements Military, Serializable {
 
@@ -92,6 +94,13 @@ public class Group implements Military, Serializable {
 			}
 		}
 		return recruits;
+	}
+	public List<Student> filterStudentByName(char x) throws NullPointerException {
+		String y=""+x;
+		List<Student> list= st.stream()
+				.filter(n->n.getFirstName().startsWith(y))
+				.collect(Collectors.toCollection(ArrayList::new));
+		return list;
 	}
 
 	@Override
