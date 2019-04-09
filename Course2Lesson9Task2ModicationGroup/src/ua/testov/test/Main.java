@@ -36,7 +36,8 @@ public class Main {
 		System.out.println();
 		System.out.println(f);
 		
-		System.out.println("Τ³λόςπ:");
+		System.out.println();
+		System.out.println("Τ³λόςπ: ");
 		System.out.println(gr1.filterStudentByName('Α'));
 		
 	}

@@ -98,8 +98,9 @@ public class Group implements Military, Serializable {
 	public List<Student> filterStudentByName(char x) throws NullPointerException {
 		String y=""+x;
 		List<Student> list= st.stream()
-				.filter(n->n.getFirstName().startsWith(y))
+				.filter(n->n.getSecondName().startsWith(y))
 				.collect(Collectors.toCollection(ArrayList::new));
+		
 		return list;
 	}
 
