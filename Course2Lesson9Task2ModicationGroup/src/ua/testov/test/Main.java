@@ -12,11 +12,11 @@ public class Main {
 	
 
 		Group gr1 = new Group("Group One");
-		Student st1 = new Student(12345, "Бондар", false, 18);
-		Student st2 = new Student(12342, "Журавель", true, 19);
-		Student st3 = new Student(12347, "Кваша", false, 19);
-		Student st4 = new Student(12343, "Зелененко", true, 17);
-		Student st5 = new Student(12341, "Мельник", true, 18);
+		Student st1 = new Student(12345, "Р‘РѕРЅРґР°СЂ", false, 18);
+		Student st2 = new Student(12342, "Р–СѓСЂР°РІРµР»СЊ", true, 19);
+		Student st3 = new Student(12347, "РљРІР°С€Р°", false, 19);
+		Student st4 = new Student(12343, "Р—РµР»РµРЅРµРЅРєРѕ", true, 17);
+		Student st5 = new Student(12341,"РњРµР»СЊРЅРёРє", true, 18);
 		gr1.addStudent(st1, st2, st3, st4, st5);
 		Faculty facult = new Faculty();
 		facult.addGroup(1, gr1);
@@ -37,8 +37,8 @@ public class Main {
 		System.out.println(f);
 		
 		System.out.println();
-		System.out.println("Фільтр:");
-		System.out.println(gr1.filterStudentByName('Б'));
+		System.out.println("Р¤С–Р»СЊС‚СЂ:");
+		System.out.println(gr1.filterStudentByName('Р‘'));
 		
 	}
 }
